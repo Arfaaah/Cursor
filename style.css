@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(19, 18, 18);
+    cursor: none;
+}
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: aliceblue;
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(246, 249, 252);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
